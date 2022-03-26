@@ -1,13 +1,13 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 147, in script
-    init python:
-  File "game/script.rpy", line 147, in script
-    init python:
-  File "game/script.rpy", line 151, in <module>
-    credits.append(['Story', 'Kevin Jeudy'])
-NameError: name 'credits' is not defined
+  File "game/script.rpy", line 166, in script
+    image game = Text("{size=80}[gameName]", text_align=0.5)
+  File "game/script.rpy", line 166, in script
+    image game = Text("{size=80}[gameName]", text_align=0.5)
+  File "game/script.rpy", line 166, in <module>
+    image game = Text("{size=80}[gameName]", text_align=0.5)
+KeyError: u'gameName'
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -16,19 +16,29 @@ Full traceback:
     renpy.main.main()
   File "/Users/jylahbah/Downloads/renpy-7.4.11-sdk/renpy/main.py", line 560, in main
     renpy.game.context().run(node)
-  File "game/script.rpy", line 147, in script
-    init python:
-  File "game/script.rpy", line 147, in script
-    init python:
-  File "/Users/jylahbah/Downloads/renpy-7.4.11-sdk/renpy/ast.py", line 928, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/Users/jylahbah/Downloads/renpy-7.4.11-sdk/renpy/python.py", line 2245, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 151, in <module>
-    credits.append(['Story', 'Kevin Jeudy'])
-NameError: name 'credits' is not defined
+  File "game/script.rpy", line 166, in script
+    image game = Text("{size=80}[gameName]", text_align=0.5)
+  File "game/script.rpy", line 166, in script
+    image game = Text("{size=80}[gameName]", text_align=0.5)
+  File "/Users/jylahbah/Downloads/renpy-7.4.11-sdk/renpy/ast.py", line 1027, in execute
+    img = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "/Users/jylahbah/Downloads/renpy-7.4.11-sdk/renpy/python.py", line 2269, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 166, in <module>
+    image game = Text("{size=80}[gameName]", text_align=0.5)
+  File "/Users/jylahbah/Downloads/renpy-7.4.11-sdk/renpy/text/text.py", line 1574, in __init__
+    self.set_text(text, scope, substitute)
+  File "/Users/jylahbah/Downloads/renpy-7.4.11-sdk/renpy/text/text.py", line 1693, in set_text
+    i, did_sub = renpy.substitutions.substitute(i, scope, substitute)
+  File "/Users/jylahbah/Downloads/renpy-7.4.11-sdk/renpy/substitutions.py", line 270, in substitute
+    s = formatter.vformat(s, (), kwargs)
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 563, in vformat
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 585, in _vformat
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 646, in get_field
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 605, in get_value
+KeyError: u'gameName'
 
 Darwin-20.5.0-x86_64-i386-64bit
 Ren'Py 7.4.11.2266
 Slice of Jam 1.0
-Sat Mar 26 17:01:34 2022
+Sat Mar 26 19:01:59 2022

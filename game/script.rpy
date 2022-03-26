@@ -16,12 +16,14 @@ define outline = Character(None,
                             window_xalign=0.5,
                             window_yalign=0.5)
 define quips = []
+default gameName = "Game Name"
 
 
 
 # The game starts here.
 
 label start:
+    scene black
     play music "audio/ooowee.mp3"
     $ name = renpy.input("What is your name?", default="Astra").strip()
 
@@ -30,13 +32,13 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg stars
+    scene bg stars with dissolve
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show selene sad
+    show selene sad with dissolve
 
     # These display lines of dialogue.
 
@@ -82,15 +84,18 @@ label start:
     selene "[name] ..."
     selene "I love you."
     selene "Please never forget that"
-    with dissolve
-    hide selene
+
+    hide selene  with dissolve
     player "I'm sorry"
     "I loved you too"
-    jump initMonologue
+    call initMonologue
+    return
 
 
 
 label initMonologue:
+
+    scene black with fade
     "We both knew it wouldn’t work, but she wanted me to leave with her."
     "I had to break it off right?"
     "Right?"
@@ -99,14 +104,17 @@ label initMonologue:
     "I dont know."
     "I just don’t know ..."
     "What the fuck I’m gonna do now."
-    jump evilwizardman
+
+    call evilwizardman
+    return
 
 
 label evilwizardman:
     scene bg park
     "???" "What’s got you down, sport?"
     outline "LAME ENDING"
-    jump credits
+    call credits
+    return
 
 
 
@@ -121,15 +129,22 @@ label lameEnding:
     player "I’m going to process my emotions in a healthy way. Talking with friends, excercising. I don’t want any shady business. Go away."
     apollo "Well then… I suppose I’ll be off."
     player "Good. I’m off then."
+    return
 
 
 
 label credits:
     #Shoutout to DaFool on lemmasoft for the template credit code
     scene bg stars #replace this with a fancy background
-    #A case where I have no idea how to make sure it doesnt past the letter count
-    show cred at Move((0.5, 5.0), (0.5, 0.0), 10, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
-    with Pause(10)
+    #I have no idea how to make sure it doesnt past the letter count
+    show cred at Move((0.5, 3.0), (0.5, 0.0), 25, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
+    show game:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with dissolve
+    with Pause(3)
+    hide game
+    with Pause(20)
     show thanks:
         yanchor 0.5 ypos 0.5
         xanchor 0.5 xpos 0.5
@@ -160,5 +175,5 @@ init:
 #    image cred = Text(credits_s, font="myfont.ttf", text_align=0.5) #use this if you want to use special fonts
     image cred = Text(credits_s, text_align=0.5)
     #image jam = Text("{size=80}Created for Northeastern Slice of Jam 2022",
-    image theend = Text("{size=80}LAME ENDING", text_align=0.5)
+    image game = Text("{size=80}game name", text_align=0.5)
     image thanks = Text("{size=80}Thanks for Playing!", text_align=0.5)

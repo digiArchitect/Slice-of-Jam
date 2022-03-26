@@ -4,7 +4,7 @@
 # name of the character.
 
 define lilith = Character("Lili", image = "lilith")
-define apollo = Character("Apollo",image="apollo")
+define apollo = Character("???",image="apollo")
 define selene = Character("Selene", image="selene")
 define player = Character('[name]')
 define quips = []
@@ -86,11 +86,17 @@ label initMonologue:
     "We both knew it wouldn’t work, but she wanted me to leave with her."
     "I had to break it off right?"
     "Right?"
-    "It wouldn’t be fair to me, or to her."
+    "Keeping things going wouldn't be fair to me, or to her."
     "..."
     "I dont know."
     "I just don’t know ..."
     "What the fuck I’m gonna do now."
+    jump evilwizardman
 
 
 label evilwizardman:
+    scene bg park
+
+label lameEnding:
+
+label credits:

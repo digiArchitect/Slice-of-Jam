@@ -3,7 +3,10 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+define lilith = Character("Lili", image = "lilith")
+define apollo = Character("Apollo",image="apollo")
+define selene = Character("Scene", image="selene")
+
 
 
 # The game starts here.

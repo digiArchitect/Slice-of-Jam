@@ -14,7 +14,9 @@ default quip = ""
 # The game starts here.
 
 label start:
+    play music "audio/ooowee.mp3"
     $ name = renpy.input("What is your name?", default="Astra").strip()
+
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
@@ -30,16 +32,19 @@ label start:
 
     # These display lines of dialogue.
 
-    selene "Even now you still won’t say anything…"
+    selene "You still won’t say anything…"
     menu:
         "What is there to say?":
             selene "Give me an answer, I’m begging you."
+            $ quip = "I've got nothing to say"
         "The stars are pretty tonight.":
             selene "The stars are prettier over there [name] come with me."
+            $ quip = "haha you're brighter than the sun"
         "Cats got my tongue I guess":
             show selene sadlaugh
             selene "You always know how to lighten the mood…"
             selene "I don’t want to lose that."
+            $ quip = "Cats got your tongue?"
 
 
 
@@ -71,4 +76,4 @@ label start:
 
 
     return
-label evilevilwizardman:
+label evilwizardman:

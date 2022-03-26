@@ -4,17 +4,27 @@
 # name of the character.
 
 define lilith = Character("Lili", image = "lilith")
-define apollo = Character("Apollo",image="apollo")
+define apollo = Character("???",image="apollo")
 define selene = Character("Selene", image="selene")
 define player = Character('[name]')
-default quip = ""
+define outline = Character(None,
+                            what_size=60,
+                            what_outlines=[(3, "#FF00FF")],
+                            what_layout="subtitle",
+                            what_xalign=0.5,
+                            what_text_align=0.5,
+                            window_xalign=0.5,
+                            window_yalign=0.5)
+define quips = []
 
 
 
 # The game starts here.
 
 label start:
+    play music "audio/ooowee.mp3"
     $ name = renpy.input("What is your name?", default="Astra").strip()
+
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
@@ -30,16 +40,23 @@ label start:
 
     # These display lines of dialogue.
 
-    selene "Even now you still won’t say anything…"
+    selene "You still won’t say anything…"
     menu:
         "What is there to say?":
             selene "Give me an answer, I’m begging you."
+            python:
+                quips.append("I've got nothing to say")
         "The stars are pretty tonight.":
             selene "The stars are prettier over there [name] come with me."
-        "Cats got my tongue I guess":
+            python:
+                quips.append("haha you're brighter than the sun")
+        "Cats got my tongue":
             show selene sadlaugh
             selene "You always know how to lighten the mood…"
             selene "I don’t want to lose that."
+            python:
+                quips.append("Cats got your tongue?")
+
 
 
 
@@ -65,11 +82,83 @@ label start:
     selene "[name] ..."
     selene "I love you."
     selene "Please never forget that"
+    with dissolve
     hide selene
     player "I'm sorry"
     "I loved you too"
+    jump initMonologue
 
 
-    return
-label evilevilwizardman:
+
+label initMonologue:
+    "We both knew it wouldn’t work, but she wanted me to leave with her."
+    "I had to break it off right?"
+    "Right?"
+    "Keeping things going wouldn't be fair to me, or to her."
+    "..."
+    "I dont know."
+    "I just don’t know ..."
+    "What the fuck I’m gonna do now."
+    jump evilwizardman
+
+
+label evilwizardman:
+    scene bg park
     "???" "What’s got you down, sport?"
+    outline "LAME ENDING"
+    jump credits
+
+
+
+
+
+
+
+label lameEnding:
+    apollo "Ho ho ho! I knew you would make the right choice. At the drop of the hat, I will fix your prob-"
+    player "I said no."
+    apollo "You... you said no?"
+    player "I’m going to process my emotions in a healthy way. Talking with friends, excercising. I don’t want any shady business. Go away."
+    apollo "Well then… I suppose I’ll be off."
+    player "Good. I’m off then."
+
+
+
+label credits:
+    #Shoutout to DaFool on lemmasoft for the template credit code
+    scene bg stars #replace this with a fancy background
+    #A case where I have no idea how to make sure it doesnt past the letter count
+    show cred at Move((0.5, 5.0), (0.5, 0.0), 10, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
+    with Pause(10)
+    show thanks:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with dissolve
+    with Pause(3)
+    hide thanks
+    return
+init python:
+    #The appending is purely stylistic I just hate it when code goes over
+    #the character count when I know how to deal with it lol
+    credits = [['Art', 'Zach Zhou'], ['Story', 'Ben Brown']]
+    credits.append(['Story', 'Kevin Jeudy'])
+    credits.append(['Story', 'Jylah Bah'])
+    credits.append(['Programming', 'Jylah Bah'])
+    credits.append(['Music', 'Ben Brown'])
+    credits.append(['Music', 'Sumant Sagar'])
+    credits_s = "{size=80}Credits\n\n"
+    c1 = ''
+    for c in credits:
+        if not c1==c[0]:
+            credits_s += "\n{size=40}" + c[0] + "\n"
+        credits_s += "{size=60}" + c[1] + "\n"
+        c1=c[0]
+    credits_s += "\n{size=60}Created for:\n Northeastern Slice of Jam{size=80} \n"
+    credits_s += "\n{size=40}Engine\n{size=60}" + renpy.version()  #Don't forget to set this to your Ren'py version
+
+init:
+#    image cred = Text(credits_s, font="myfont.ttf", text_align=0.5) #use this if you want to use special fonts
+    image cred = Text(credits_s, text_align=0.5)
+    #image jam = Text("{size=80}Created for Northeastern Slice of Jam 2022",
+    image theend = Text("{size=80}LAME ENDING", text_align=0.5)
+    image thanks = Text("{size=80}Thanks for Playing!", text_align=0.5)

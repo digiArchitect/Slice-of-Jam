@@ -34,20 +34,41 @@ label start:
     menu:
         "What is there to say?":
             show selene angry
-            selene "Give me an answer, I’m begging you"
+            selene "Give me an answer, I’m begging you."
         "The stars are pretty tonight.":
             show selene sad
-            selene "The stars are prettier over there [name] come with me"
+            selene "The stars are prettier over there [name] come with me."
         "Cats got my tongue I guess":
             show selene sad
-            selene "You always know how to lighten the mood… I don’t want to lose that."
+            selene "You always know how to lighten the mood…"
+            selene "I don’t want to lose that."
 
 
 
 
-    player "Once you add a story, pictures, and music, you can release it to the world!"
+    player "..."
+    player "You know I can't go with you selene."
+    selene "Are we really going to throw what we have away?"
+    selene "Is this the way that you want this to end"
+    player "My answer won’t change. I can't put my life on hold for you."
+    player "Besides, do we even have anything to throw away?"
+    show selene sad
+    selene "So this is it then?"
+    menu:
+        "Im sorry":
+            player "..."
+        "I didn't want it to be like this"
+            player "..."
+        "I guess it is"
+            player "..."
 
-    # This ends the game.
-    pause
+    player "..."
+    selene "[name] ..."
+    selene "I love you."
+    selene "Please never forget that"
+    hide selene
+    player "I'm sorry"
+    player "I loved you too"
+
 
     return

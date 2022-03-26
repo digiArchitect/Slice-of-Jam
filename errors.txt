@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 41: expected statement.
-    "Cats got my tongue I guess":
-                                ^
+File "game/script.rpy", line 60: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "I didn't want it to be like this"
+                                      ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sat Mar 26 13:21:18 2022
+Sat Mar 26 13:33:56 2022

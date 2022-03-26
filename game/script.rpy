@@ -7,7 +7,7 @@ define lilith = Character("Lili", image = "lilith")
 define apollo = Character("Apollo",image="apollo")
 define selene = Character("Selene", image="selene")
 define player = Character('[name]')
-default quip = ""
+define quips = []
 
 
 
@@ -36,15 +36,19 @@ label start:
     menu:
         "What is there to say?":
             selene "Give me an answer, I’m begging you."
-            $ quip = "I've got nothing to say"
+            python:
+                quips.append("I've got nothing to say")
         "The stars are pretty tonight.":
             selene "The stars are prettier over there [name] come with me."
-            $ quip = "haha you're brighter than the sun"
-        "Cats got my tongue I guess":
+            python:
+                quips.append("haha you're brighter than the sun")
+        "Cats got my tongue":
             show selene sadlaugh
             selene "You always know how to lighten the mood…"
             selene "I don’t want to lose that."
-            $ quip = "Cats got your tongue?"
+            python:
+                quips.append("Cats got your tongue?")
+
 
 
 
@@ -70,10 +74,23 @@ label start:
     selene "[name] ..."
     selene "I love you."
     selene "Please never forget that"
+    with dissolve
     hide selene
     player "I'm sorry"
     "I loved you too"
+    jump initMonologue
 
 
     return
+label initMonologue:
+    "We both knew it wouldn’t work, but she wanted me to leave with her."
+    "I had to break it off right?"
+    "Right?"
+    "It wouldn’t be fair to me, or to her."
+    "..."
+    "I dont know."
+    "I just don’t know ..."
+    "What the fuck I’m gonna do now."
+
+
 label evilwizardman:

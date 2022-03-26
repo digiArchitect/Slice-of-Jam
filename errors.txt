@@ -2,17 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 38: expected statement.
-    quip = "I've got nothing to say"
-         ^
+File "game/script.rpy", line 39: expected statement.
+    quips.append("I've got nothing to say")
+                                           ^
 
-File "game/script.rpy", line 41: expected statement.
-    quip = "haha you're brighter than the sun"
-         ^
+File "game/script.rpy", line 42: expected statement.
+    quips.append("haha you're brighter than the sun")
+                                                     ^
 
-File "game/script.rpy", line 46: expected statement.
-    quip = "Cats got your tongue?"
-         ^
+File "game/script.rpy", line 47: expected statement.
+    quips.append("Cats got your tongue?")
+                                         ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sat Mar 26 14:56:19 2022
+Sat Mar 26 15:16:21 2022

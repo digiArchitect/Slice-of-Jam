@@ -4,19 +4,17 @@
 # name of the character.
 
 define lilith = Character("Lili", image = "lilith")
-define apollo = Character("???",image="apollo")
+define apollo = Character("Apollo",image="apollo")
 define selene = Character("Selene", image="selene")
 define player = Character('[name]')
-define quips = []
+default quip = ""
 
 
 
 # The game starts here.
 
 label start:
-    play music "audio/ooowee.mp3"
     $ name = renpy.input("What is your name?", default="Astra").strip()
-
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
@@ -32,23 +30,16 @@ label start:
 
     # These display lines of dialogue.
 
-    selene "You still won’t say anything…"
+    selene "Even now you still won’t say anything…"
     menu:
         "What is there to say?":
             selene "Give me an answer, I’m begging you."
-            python:
-                quips.append("I've got nothing to say")
         "The stars are pretty tonight.":
             selene "The stars are prettier over there [name] come with me."
-            python:
-                quips.append("haha you're brighter than the sun")
-        "Cats got my tongue":
+        "Cats got my tongue I guess":
             show selene sadlaugh
             selene "You always know how to lighten the mood…"
             selene "I don’t want to lose that."
-            python:
-                quips.append("Cats got your tongue?")
-
 
 
 
@@ -74,29 +65,11 @@ label start:
     selene "[name] ..."
     selene "I love you."
     selene "Please never forget that"
-    with dissolve
     hide selene
     player "I'm sorry"
     "I loved you too"
-    jump initMonologue
 
 
     return
-label initMonologue:
-    "We both knew it wouldn’t work, but she wanted me to leave with her."
-    "I had to break it off right?"
-    "Right?"
-    "Keeping things going wouldn't be fair to me, or to her."
-    "..."
-    "I dont know."
-    "I just don’t know ..."
-    "What the fuck I’m gonna do now."
-    jump evilwizardman
-
-
-label evilwizardman:
-    scene bg park
-
-label lameEnding:
-
-label credits:
+label evilevilwizardman:
+    "???" "What’s got you down, sport?"

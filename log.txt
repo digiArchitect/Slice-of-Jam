@@ -1,21 +1,21 @@
-Sat Mar 26 19:09:20 2022
+Sat Mar 26 19:45:31 2022
 Darwin-20.5.0-x86_64-i386-64bit
 Ren'Py 7.4.11.2266
  
 
-Bootstrap to the start of init.init took 0.21s
-Early init took 0.01s
+Bootstrap to the start of init.init took 0.75s
+Early init took 0.03s
 Loader init took 0.03s
-Loading error handling took 0.05s
-Loading script took 0.45s
-Loading save slot metadata. took 0.03s
+Loading error handling took 0.11s
+Loading script took 1.98s
+Loading save slot metadata. took 0.04s
 Loading persistent took 0.00s
 
-File "game/script.rpy", line 117: expected statement.
-    returns
-           ^
+File "game/script.rpy", line 118: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        "???" "Don't play coy, sport!
 DPI scale factor: 1.000000
-Interface start took 0.51s
+Interface start took 1.63s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1440, 900)
@@ -28,160 +28,17 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 27.92s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.04s
-Loading script took 0.27s
-Loading save slot metadata. took 0.03s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.12s
-Loading analysis data took 0.05s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/jylahbah/Library/RenPy/backups/Slice of Jam':
-Dump and make backups. took 0.16s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.05s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.16s
-Build styles took 0.02s
-Load screen analysis took 0.00s
-Analyze screens took 0.17s
-Save screen analysis took 0.10s
-Prepare screens took 0.35s
-Save pyanalysis. took 0.13s
-Save bytecode. took 0.13s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel Inc.'
-Renderer: 'Intel(R) Iris(TM) Plus Graphics OpenGL Engine (1x6x8 (fused) LP'
-Version: '2.1 INTEL-16.4.5'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 48.45s
+Bootstrap to the start of init.init took 33.35s
 Early init took 0.00s
 Loader init took 0.02s
 Loading error handling took 0.03s
-Loading script took 0.18s
+Loading script took 0.19s
 Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 
-File "game/script.rpy", line 35: end of line expected.
-    scene bg stars with dissolve with pause(3)
-                                 ^
-DPI scale factor: 1.000000
-Interface start took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel Inc.'
-Renderer: 'Intel(R) Iris(TM) Plus Graphics OpenGL Engine (1x6x8 (fused) LP'
-Version: '2.1 INTEL-16.4.5'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 60.76s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.03s
-Loading script took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 35: end of line expected.
-    scene bg stars with dissolve with Pause(3)
-                                 ^
-DPI scale factor: 1.000000
-Interface start took 0.22s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel Inc.'
-Renderer: 'Intel(R) Iris(TM) Plus Graphics OpenGL Engine (1x6x8 (fused) LP'
-Version: '2.1 INTEL-16.4.5'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 61.62s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.04s
-Loading script took 0.22s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 35: end of line expected.
-    scene bg stars with dissolve with Pause(3)
-                                 ^
-DPI scale factor: 1.000000
-Interface start took 0.25s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel Inc.'
-Renderer: 'Intel(R) Iris(TM) Plus Graphics OpenGL Engine (1x6x8 (fused) LP'
-Version: '2.1 INTEL-16.4.5'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 63.72s
-Early init took 0.00s
-Loader init took 0.01s
-Loading error handling took 0.03s
-Loading script took 0.17s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 35: end of line expected.
-    scene bg stars with dissolve with Pause(3)
-                                 ^
-DPI scale factor: 1.000000
-Interface start took 0.22s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel Inc.'
-Renderer: 'Intel(R) Iris(TM) Plus Graphics OpenGL Engine (1x6x8 (fused) LP'
-Version: '2.1 INTEL-16.4.5'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 81.11s
-Early init took 0.00s
-Loader init took 0.01s
-Loading error handling took 0.03s
-Loading script took 0.21s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 35: end of line expected.
-    scene bg stars with dissolve with Pause(3)
-                                 ^
+File "game/script.rpy", line 132: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        apollo "Fine then! Leave! Then you’ll never see what could’ve been!
 DPI scale factor: 1.000000
 Interface start took 0.21s
 
@@ -196,19 +53,19 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 84.17s
+Bootstrap to the start of init.init took 51.21s
 Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.04s
-Loading script took 0.24s
-Loading save slot metadata. took 0.03s
+Loader init took 0.01s
+Loading error handling took 0.03s
+Loading script took 0.18s
+Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 
-File "game/script.rpy", line 35: end of line expected.
-    scene bg stars with dissolve with Pause(3)
-                                 ^
+File "game/script.rpy", line 132: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        apollo "Fine then! Leave! Then you’ll never see what could’ve been!
 DPI scale factor: 1.000000
-Interface start took 0.20s
+Interface start took 0.21s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1440, 900)
@@ -221,17 +78,67 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 89.67s
+Bootstrap to the start of init.init took 55.06s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.03s
+Loading script took 0.16s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 132: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        apollo "Fine then! Leave! Then you’ll never see what could’ve been!
+DPI scale factor: 1.000000
+Interface start took 0.21s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics OpenGL Engine (1x6x8 (fused) LP'
+Version: '2.1 INTEL-16.4.5'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 58.99s
 Early init took 0.00s
 Loader init took 0.02s
 Loading error handling took 0.04s
-Loading script took 0.28s
+Loading script took 0.32s
 Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 
-File "game/script.rpy", line 35: end of line expected.
-    scene bg stars with dissolve with Pause(3)
-                                 ^
+File "game/script.rpy", line 132: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        apollo "Fine then! Leave! Then you’ll never see what could’ve been!
+DPI scale factor: 1.000000
+Interface start took 0.38s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics OpenGL Engine (1x6x8 (fused) LP'
+Version: '2.1 INTEL-16.4.5'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 62.47s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.03s
+Loading script took 0.20s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 132: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        apollo "Fine then! Leave! Then you’ll never see what could’ve been!
 DPI scale factor: 1.000000
 Interface start took 0.28s
 
@@ -246,7 +153,57 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 90.97s
+Bootstrap to the start of init.init took 63.46s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.03s
+Loading script took 0.18s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 132: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        apollo "Fine then! Leave! Then you’ll never see what could’ve been!
+DPI scale factor: 1.000000
+Interface start took 0.22s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics OpenGL Engine (1x6x8 (fused) LP'
+Version: '2.1 INTEL-16.4.5'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 64.32s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.03s
+Loading script took 0.16s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 132: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        apollo "Fine then! Leave! Then you’ll never see what could’ve been!
+DPI scale factor: 1.000000
+Interface start took 0.21s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics OpenGL Engine (1x6x8 (fused) LP'
+Version: '2.1 INTEL-16.4.5'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 65.08s
 Early init took 0.00s
 Loader init took 0.01s
 Loading error handling took 0.03s
@@ -254,11 +211,11 @@ Loading script took 0.15s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 
-File "game/script.rpy", line 35: end of line expected.
-    scene bg stars with dissolve with Pause(3)
-                                 ^
+File "game/script.rpy", line 132: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        apollo "Fine then! Leave! Then you’ll never see what could’ve been!
 DPI scale factor: 1.000000
-Interface start took 0.23s
+Interface start took 0.20s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1440, 900)
@@ -271,19 +228,19 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 92.67s
+Bootstrap to the start of init.init took 65.81s
 Early init took 0.00s
-Loader init took 0.02s
+Loader init took 0.01s
 Loading error handling took 0.03s
-Loading script took 0.30s
+Loading script took 0.18s
 Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 
-File "game/script.rpy", line 35: end of line expected.
-    scene bg stars with dissolve with Pause(3)
-                                 ^
+File "game/script.rpy", line 132: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        apollo "Fine then! Leave! Then you’ll never see what could’ve been!
 DPI scale factor: 1.000000
-Interface start took 0.23s
+Interface start took 0.44s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1440, 900)
@@ -296,19 +253,19 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 95.16s
+Bootstrap to the start of init.init took 68.04s
 Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.03s
-Loading script took 0.27s
+Loader init took 0.03s
+Loading error handling took 0.04s
+Loading script took 0.28s
 Loading save slot metadata. took 0.05s
 Loading persistent took 0.00s
 
-File "game/script.rpy", line 35: end of line expected.
-    scene bg stars with dissolve with Pause(3)
-                                 ^
+File "game/script.rpy", line 132: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        apollo "Fine then! Leave! Then you’ll never see what could’ve been!
 DPI scale factor: 1.000000
-Interface start took 0.74s
+Interface start took 0.71s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1440, 900)
@@ -321,37 +278,19 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 98.68s
+Bootstrap to the start of init.init took 76.97s
 Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.04s
-Loading script took 0.37s
-Loading save slot metadata. took 0.03s
+Loader init took 0.04s
+Loading error handling took 0.11s
+Loading script took 0.71s
+Loading save slot metadata. took 0.05s
 Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.16s
-Loading analysis data took 0.05s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/jylahbah/Library/RenPy/backups/Slice of Jam':
-Dump and make backups. took 0.36s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.12s
+
+File "game/script.rpy", line 143: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Don't drink it"
+                    ^
 DPI scale factor: 1.000000
-Creating interface object took 0.01s
-Cleaning stores took 0.00s
-Init translation took 0.23s
-Build styles took 0.03s
-Load screen analysis took 0.00s
-Analyze screens took 0.04s
-Save screen analysis took 0.13s
-Prepare screens took 0.25s
-Save pyanalysis. took 0.09s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.19s
+Interface start took 0.42s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1440, 900)
@@ -363,88 +302,63 @@ Version: '2.1 INTEL-16.4.5'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
 Maximum texture size: 4096x4096
-Cleaning stores took 0.01s
-Init translation took 0.00s
-Build styles took 0.03s
-Load screen analysis took 0.08s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
 Resetting cache.
-Bootstrap to the start of init.init took 132.98s
-Early init took 0.01s
+Bootstrap to the start of init.init took 79.58s
+Early init took 0.00s
 Loader init took 0.04s
-Loading error handling took 0.04s
-Loading script took 0.51s
-Loading save slot metadata. took 0.10s
+Loading error handling took 0.12s
+Loading script took 0.72s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 143: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Don't drink it"
+                    ^
+DPI scale factor: 1.000000
+Interface start took 0.34s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics OpenGL Engine (1x6x8 (fused) LP'
+Version: '2.1 INTEL-16.4.5'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 102.09s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.03s
+Loading script took 0.29s
+Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.13s
+Running init code took 0.14s
 Loading analysis data took 0.04s
 Analyze and compile ATL took 0.01s
 Index archives took 0.00s
 Backing up script files to '/Users/jylahbah/Library/RenPy/backups/Slice of Jam':
-Dump and make backups. took 0.25s
+Dump and make backups. took 0.18s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.24s
+Initial gc. took 0.06s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.13s
-Build styles took 0.09s
+Init translation took 0.10s
+Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.05s
-Save screen analysis took 0.08s
-Prepare screens took 0.17s
+Analyze screens took 0.04s
+Save screen analysis took 0.07s
+Prepare screens took 0.28s
 Save pyanalysis. took 0.07s
 Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.13s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel Inc.'
-Renderer: 'Intel(R) Iris(TM) Plus Graphics OpenGL Engine (1x6x8 (fused) LP'
-Version: '2.1 INTEL-16.4.5'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 148.96s
-Early init took 0.01s
-Loader init took 0.02s
-Loading error handling took 0.06s
-Loading script took 0.45s
-Loading save slot metadata. took 0.03s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.12s
-Loading analysis data took 0.07s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/jylahbah/Library/RenPy/backups/Slice of Jam':
-Dump and make backups. took 0.26s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.09s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.20s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.06s
-Save screen analysis took 0.13s
-Prepare screens took 0.25s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.23s
+Interface start took 0.17s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1440, 900)
@@ -463,132 +377,45 @@ Load screen analysis took 0.09s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.01s
-Resetting cache.
-Bootstrap to the start of init.init took 213.12s
-Early init took 0.00s
-Loader init took 0.05s
-Loading error handling took 0.05s
-Loading script took 0.29s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.08s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to '/Users/jylahbah/Library/RenPy/backups/Slice of Jam':
-Dump and make backups. took 0.16s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.07s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.10s
+Init translation took 0.00s
 Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.04s
-Save screen analysis took 0.14s
-Prepare screens took 0.60s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.12s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.25s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel Inc.'
-Renderer: 'Intel(R) Iris(TM) Plus Graphics OpenGL Engine (1x6x8 (fused) LP'
-Version: '2.1 INTEL-16.4.5'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
-Maximum texture size: 4096x4096
+Load screen analysis took 0.08s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.01s
 Resetting cache.
-Bootstrap to the start of init.init took 216.31s
+Bootstrap to the start of init.init took 219.01s
 Early init took 0.00s
 Loader init took 0.03s
 Loading error handling took 0.04s
-Loading script took 0.25s
-Loading save slot metadata. took 0.04s
+Loading script took 0.28s
+Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.12s
+Running init code took 0.09s
 Loading analysis data took 0.04s
 Analyze and compile ATL took 0.01s
 Index archives took 0.00s
 Backing up script files to '/Users/jylahbah/Library/RenPy/backups/Slice of Jam':
-Dump and make backups. took 0.15s
+Dump and make backups. took 0.17s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.07s
+Initial gc. took 0.10s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.09s
+Init translation took 0.07s
 Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.03s
-Save screen analysis took 0.08s
-Prepare screens took 0.27s
+Save screen analysis took 0.07s
+Prepare screens took 0.20s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.14s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel Inc.'
-Renderer: 'Intel(R) Iris(TM) Plus Graphics OpenGL Engine (1x6x8 (fused) LP'
-Version: '2.1 INTEL-16.4.5'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
-Maximum texture size: 4096x4096
-Performance test:
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.06s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Bootstrap to the start of init.init took 414.70s
-Early init took 0.00s
-Loader init took 0.04s
-Loading error handling took 0.05s
-Loading script took 0.42s
-Loading save slot metadata. took 0.03s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.16s
-Loading analysis data took 0.07s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/jylahbah/Library/RenPy/backups/Slice of Jam':
-Dump and make backups. took 0.33s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.08s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.08s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.21s
-Prepare screens took 0.22s
-Save pyanalysis. took 0.06s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.21s
+Interface start took 0.13s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1440, 900)
@@ -608,37 +435,37 @@ Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
 Resetting cache.
-Bootstrap to the start of init.init took 531.21s
+Bootstrap to the start of init.init took 321.17s
 Early init took 0.00s
-Loader init took 0.05s
-Loading error handling took 0.04s
-Loading script took 0.37s
-Loading save slot metadata. took 0.03s
+Loader init took 0.03s
+Loading error handling took 0.05s
+Loading script took 0.67s
+Loading save slot metadata. took 0.04s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.09s
-Loading analysis data took 0.03s
+Running init code took 0.12s
+Loading analysis data took 0.05s
 Analyze and compile ATL took 0.01s
 Index archives took 0.00s
 Backing up script files to '/Users/jylahbah/Library/RenPy/backups/Slice of Jam':
-Dump and make backups. took 0.24s
+Dump and make backups. took 0.56s
 Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.08s
+Making clean stores took 0.01s
+Initial gc. took 0.18s
 DPI scale factor: 1.000000
-Creating interface object took 0.00s
+Creating interface object took 0.01s
 Cleaning stores took 0.00s
-Init translation took 0.12s
-Build styles took 0.02s
+Init translation took 0.22s
+Build styles took 0.05s
 Load screen analysis took 0.00s
-Analyze screens took 0.05s
-Save screen analysis took 0.15s
-Prepare screens took 0.19s
-Save pyanalysis. took 0.00s
+Analyze screens took 0.12s
+Save screen analysis took 0.14s
+Prepare screens took 0.49s
+Save pyanalysis. took 0.02s
 Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.25s
+Interface start took 0.16s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1440, 900)
@@ -650,43 +477,208 @@ Version: '2.1 INTEL-16.4.5'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
 Maximum texture size: 4096x4096
-Cleaning stores took 0.01s
-Init translation took 0.03s
-Build styles took 0.03s
-Load screen analysis took 0.13s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.01s
 Resetting cache.
-Bootstrap to the start of init.init took 930.16s
+Bootstrap to the start of init.init took 403.24s
 Early init took 0.00s
 Loader init took 0.04s
 Loading error handling took 0.06s
-Loading script took 0.66s
-Loading save slot metadata. took 0.08s
+Loading script took 0.73s
+Loading save slot metadata. took 0.05s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.16s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.01s
+Running init code took 0.17s
+Loading analysis data took 0.09s
+Analyze and compile ATL took 0.02s
 Index archives took 0.00s
 Backing up script files to '/Users/jylahbah/Library/RenPy/backups/Slice of Jam':
-Dump and make backups. took 0.25s
+Dump and make backups. took 0.29s
+Cleaning cache took 0.01s
+Making clean stores took 0.00s
+Initial gc. took 0.15s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.23s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.11s
+Save screen analysis took 0.26s
+Prepare screens took 0.23s
+Save pyanalysis. took 0.07s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.14s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics OpenGL Engine (1x6x8 (fused) LP'
+Version: '2.1 INTEL-16.4.5'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 414.48s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.04s
+Loading script took 0.28s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.12s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/jylahbah/Library/RenPy/backups/Slice of Jam':
+Dump and make backups. took 0.16s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.17s
+Initial gc. took 0.10s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.13s
 Build styles took 0.02s
 Load screen analysis took 0.00s
-Analyze screens took 0.08s
-Save screen analysis took 0.13s
-Prepare screens took 0.22s
+Analyze screens took 0.06s
+Save screen analysis took 0.09s
+Prepare screens took 0.16s
+Save pyanalysis. took 0.06s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.15s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics OpenGL Engine (1x6x8 (fused) LP'
+Version: '2.1 INTEL-16.4.5'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 417.93s
+Early init took 0.00s
+Loader init took 0.04s
+Loading error handling took 0.07s
+Loading script took 0.74s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.20s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to '/Users/jylahbah/Library/RenPy/backups/Slice of Jam':
+Dump and make backups. took 0.41s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.23s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.15s
+Prepare screens took 0.45s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.05s
-Running _start took 0.01s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.16s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics OpenGL Engine (1x6x8 (fused) LP'
+Version: '2.1 INTEL-16.4.5'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 437.93s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.07s
+Loading script took 0.41s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.21s
+Loading analysis data took 0.10s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to '/Users/jylahbah/Library/RenPy/backups/Slice of Jam':
+Dump and make backups. took 0.22s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.13s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.08s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.12s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.21s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics OpenGL Engine (1x6x8 (fused) LP'
+Version: '2.1 INTEL-16.4.5'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 453.63s
+Early init took 0.01s
+Loader init took 0.11s
+Loading error handling took 0.06s
+Loading script took 0.50s
+Loading save slot metadata. took 0.06s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.21s
+Loading analysis data took 0.08s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to '/Users/jylahbah/Library/RenPy/backups/Slice of Jam':
+Dump and make backups. took 0.20s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.16s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.23s
+Prepare screens took 0.35s
+Save pyanalysis. took 0.24s
+Save bytecode. took 0.04s
+Running _start took 0.00s
 Performance test:
 Interface start took 0.32s
 
@@ -700,152 +692,3 @@ Version: '2.1 INTEL-16.4.5'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
 Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.02s
-Load screen analysis took 0.07s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.08s
-Resetting cache.
-Bootstrap to the start of init.init took 994.25s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.04s
-Loading script took 0.39s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.08s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to '/Users/jylahbah/Library/RenPy/backups/Slice of Jam':
-Dump and make backups. took 0.18s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.18s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.27s
-Build styles took 0.02s
-Load screen analysis took 0.00s
-Analyze screens took 0.07s
-Save screen analysis took 0.15s
-Prepare screens took 0.41s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.05s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.27s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel Inc.'
-Renderer: 'Intel(R) Iris(TM) Plus Graphics OpenGL Engine (1x6x8 (fused) LP'
-Version: '2.1 INTEL-16.4.5'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 1025.61s
-Early init took 0.00s
-Loader init took 0.05s
-Loading error handling took 0.05s
-Loading script took 0.51s
-Loading save slot metadata. took 0.03s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.14s
-Loading analysis data took 0.07s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/jylahbah/Library/RenPy/backups/Slice of Jam':
-Dump and make backups. took 0.22s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.08s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.12s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.06s
-Save screen analysis took 0.08s
-Prepare screens took 0.54s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.22s
-Performance test:
-Interface start took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel Inc.'
-Renderer: 'Intel(R) Iris(TM) Plus Graphics OpenGL Engine (1x6x8 (fused) LP'
-Version: '2.1 INTEL-16.4.5'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.09s
-Load screen analysis took 0.13s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.01s
-Resetting cache.
-Bootstrap to the start of init.init took 1060.56s
-Early init took 0.01s
-Loader init took 0.05s
-Loading error handling took 0.15s
-Loading script took 0.42s
-Loading save slot metadata. took 0.15s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.16s
-Loading analysis data took 0.14s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Dump and make backups. took 0.61s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.26s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.28s
-Build styles took 0.08s
-Load screen analysis took 0.16s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.39s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.38s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel Inc.'
-Renderer: 'Intel(R) Iris(TM) Plus Graphics OpenGL Engine (1x6x8 (fused) LP'
-Version: '2.1 INTEL-16.4.5'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.03s
-Load screen analysis took 0.19s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.03s

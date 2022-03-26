@@ -4,11 +4,11 @@
 # name of the character.
 
 define lilith = Character("Lili", image = "lilith")
-define apollo = Character("???",image="apollo")
+define apollo = Character("Apollo",image="apollo")
 define selene = Character("Selene", image="selene")
 define player = Character('[name]')
 define outline = Character(None,
-                            what_size=60,
+                            what_size=40,
                             what_outlines=[(3, "#FF00FF")],
                             what_layout="subtitle",
                             what_xalign=0.5,
@@ -17,6 +17,7 @@ define outline = Character(None,
                             window_yalign=0.5)
 define quips = []
 default gameName = "Game Name"
+
 
 
 
@@ -110,10 +111,49 @@ label initMonologue:
 
 
 label evilwizardman:
-    scene bg park
+    scene bg park with fade
+    show apollo with fade
     "???" "What’s got you down, sport?"
-    outline "LAME ENDING"
-    call credits
+    "Huh?"
+    "What was that?"
+    "???" "Don't play coy, sport!"
+    apollo "It's me! Apollo!"
+    player "Do..."
+    player "Do I know you?"
+    apollo "Dont't joke, kid! You know me!"
+    apollo "Your old pal apollo!"
+    apollo "Seems you're down on youre luck, eh?"
+    "Anyone could guess that.. I probably look pathetic."
+    apollo "Lady troubles?"
+    "..."
+    apollo "Don't worry, champ! I have sure got the fix for you!"
+    player "I dont want a fix. I want to be with Selene."
+    apollo "But she’s gone now, isn’t she? Far, far away? Never to be seen again?"
+    player "I'm leaving."
+    apollo "Fine then! Leave! Then you’ll never see what could’ve been!"
+    player "What could've been?"
+    apollo "Aha! I see I’ve piqued your interest! Now beg me to tell you more!"
+    player "Don't push your luck."
+    apollo "There may be a quick fix for your loneliness!"
+    apollo "All you have to do is drink this potion and the void in your heart will be no longer!"
+    apollo "So, what do you say to my proposal?"
+    menu:
+        "Drink it?":
+            apollo "Ho ho ho! I knew you would make the right choice. At the drop of the hat, I will fix your problem! Just drink up!"
+
+        "Don't drink it":
+            jump lameEnding
+    "You drink the potion"
+    apollo "Good luck!"
+    hide apollo with dissolve
+    apollo "AHAHAHAHAHAHA"
+    player "What a sketchy guy… I guess I’ll go home then…"
+
+
+
+
+
+
     return
 
 
@@ -129,6 +169,9 @@ label lameEnding:
     player "I’m going to process my emotions in a healthy way. Talking with friends, excercising. I don’t want any shady business. Go away."
     apollo "Well then… I suppose I’ll be off."
     player "Good. I’m off then."
+    outline "You process your emotions in a healthy way and move on with your life."
+    outline "LAME ENDING"
+    jump credits
     return
 
 

@@ -319,12 +319,11 @@ label flirt:
     show lilli smile with dissolve
     lillith "You’ll have to be more direct than that."
     "Should I just start to lean in? Or should I ask first? Shit, shit…!"
-    "W-What?! Why is she holding my chin?!"
     lillith "Well… I can’t say I don’t feel the same."
     lillith "But I think we should learn more about each other first."
     lillith "Can't rush into a relationship, can we?"
     player "Well, yeah. You’re totally right."
-    return
+
 
 
 label scene6:

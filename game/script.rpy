@@ -332,7 +332,7 @@ label flirt:
 
 
 label scene6:
-    "I can’t believe magician’s potion worked so well. That has to be it right? There’s no way someone so cute and cool would be into me."
+    "I can’t believe Eckle’s potion worked so well. That has to be it right? There’s no way someone so cute and cool would be into me."
     "Almost makes me forget about Selene."
     "I don’t want to think about her right now. I should go somewhere to get it off my mind…"
     "I should go to TJ's. If its good enough for Lilli its good enough for me!"

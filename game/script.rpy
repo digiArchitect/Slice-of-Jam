@@ -33,7 +33,7 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg stars with dissolve
+    scene bg stars with fade
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -147,14 +147,15 @@ label evilwizardman:
     apollo "Good luck!"
     hide apollo with dissolve
     apollo "AHAHAHAHAHAHA"
+    scene black with fade
     player "What a sketchy guy… I guess I’ll go home then…"
-
-
-
-
-
+    jump scene3
 
     return
+
+label scene3:
+    "A couple days later....."
+    scene park with fade
 
 
 

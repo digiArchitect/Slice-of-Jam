@@ -1,34 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 156, in script
-    init python:
-  File "game/script.rpy", line 156, in script
-    init python:
-  File "game/script.rpy", line 165, in <module>
-    credits.append(['Ending', ending])
-NameError: name 'ending' is not defined
+  File "renpy/common/00keymap.rpy", line 469, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 469, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 488, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+AttributeError: 'NoneType' object has no attribute 'stores'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "/Users/jylahbah/Downloads/renpy-7.4.11-sdk/renpy/bootstrap.py", line 331, in bootstrap
-    renpy.main.main()
-  File "/Users/jylahbah/Downloads/renpy-7.4.11-sdk/renpy/main.py", line 560, in main
-    renpy.game.context().run(node)
-  File "game/script.rpy", line 156, in script
-    init python:
-  File "game/script.rpy", line 156, in script
-    init python:
+  File "renpy/common/00keymap.rpy", line 469, in script
+    python hide:
   File "/Users/jylahbah/Downloads/renpy-7.4.11-sdk/renpy/ast.py", line 928, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "/Users/jylahbah/Downloads/renpy-7.4.11-sdk/renpy/python.py", line 2245, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/script.rpy", line 165, in <module>
-    credits.append(['Ending', ending])
-NameError: name 'ending' is not defined
+  File "renpy/common/00keymap.rpy", line 469, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 488, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+  File "/Users/jylahbah/Downloads/renpy-7.4.11-sdk/renpy/loadsave.py", line 394, in save
+    roots = renpy.game.log.freeze(None)
+  File "/Users/jylahbah/Downloads/renpy-7.4.11-sdk/renpy/python.py", line 2142, in freeze
+    self.complete(False)
+  File "/Users/jylahbah/Downloads/renpy-7.4.11-sdk/renpy/python.py", line 1726, in complete
+    self.current.stores[name], self.current.delta_ebc[name] = sd.get_changes(begin)
+AttributeError: 'NoneType' object has no attribute 'stores'
 
 Darwin-20.5.0-x86_64-i386-64bit
 Ren'Py 7.4.11.2266
 Slice of Jam 1.0
-Sat Mar 26 19:35:42 2022
+Sat Mar 26 19:56:28 2022

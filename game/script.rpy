@@ -16,12 +16,13 @@ define outline = Character(None,
                             what_text_align=0.5,
                             window_xalign=0.5,
                             window_yalign=0.5)
-define quips = []
+
 default gameName = "Game Name"
 image bg starryTwo = "starsTwo.png"
 image bg starryOne = "starsOne.png"
 image bg dayPark = "park daylight.png"
 image bg nightPark = "park night.png"
+image bg bar = "bar.png"
 transform bounce:
     yoffset 0
     easein .175 yoffset -10
@@ -63,18 +64,13 @@ label start:
     menu:
         "What is there to say?":
             selene "Give me an answer, I’m begging you."
-            python:
-                quips.append("You've got nothing to say pal?")
         "The stars are pretty tonight.":
             selene "The stars are prettier over there [name] come with me."
-            python:
-                quips.append("Its nice out tonight, eh?")
         "Cats got my tongue...":
             show selene sad-smile with dissolve
             selene "You always know how to lighten the mood…"
             selene "I don’t want to lose that."
-            python:
-                quips.append("Cats got your tongue?")
+
 
 
 
@@ -231,7 +227,7 @@ label scene4:
 
 label scene5:
     "I shouldn’t have even come here. This is stupid."
-    scene dayPark with fade
+    scene bg dayPark with fade
     "8pm was the time she said… I might be a few minutes late, but she shouldn’t have left by now."
     "Shit, did I even get the time right? It was 8 right-"
     lillith "[name]! Hey~!"
@@ -276,7 +272,7 @@ label scene5:
     "I really just… met someone like this in the park?"
     "Wait. No way it was that stupid potion..."
     "What was even in that shit anyway? Food coloring?"
-    scene nightPark with dissolve
+    scene bg nightPark with dissolve
     show lilli neutral with dissolve
     lillith "What's wrong, [name]? Get Jinxed?"
     player "Wh-Huh?"
@@ -336,10 +332,11 @@ label scene6:
     "Almost makes me forget about Selene."
     "I don’t want to think about her right now. I should go somewhere to get it off my mind…"
     "I should go to TJ's. If its good enough for Lilli its good enough for me!"
-    scene bar with dissolve
+    scene bg bar with dissolve
     player "Wow… Place looks nice. Lilli has great taste!"
     player "Right, I’m here to numb my head. Time to get to it, then."
     "As I sat down, the bartender approached."
+    play music "audio/melancholy.mp3"
     show lola smile with dissolve
     "Bartend" "What can I get you?"
     "Wow, she’s got great style. Suits this place well, I guess…"
@@ -354,15 +351,10 @@ label scene6:
     "..."
     "This seems weirdly familiar?"
     "Think I read online getting that feeling has to do with memory encoding failure."
-    "Bartender" "[quips[0]]"
-    if ([quips[0]] ==  "Cats got your tongue?" || [quips[0]] == "You've got nothing to say pal?"):
-        player "Oh, ah, no- Its nothing."
-        player "Just trying to keep my memories straight."
-        bartend "At a bar? Haha, might be a little hard."
-    else:
-        player "Huh? Oh, y-yeah, it is."
-        player "I was actually out enjoying it for a bit today."
-        "Bartender" "Now you’re here to forget it all? I must be missing something here!"
+    "Bartender" "Cat's got your tongue?"
+    player "Oh, ah, no- Its nothing."
+    player "Just trying to keep my memories straight."
+    "Bartender" "At a bar? Haha, might be a little hard."
     lola "By the way, name’s Lola. Like the bunny."
     lola "You?"
     player "Ah, right. I’m [name]. Nice to meet you."
@@ -374,9 +366,9 @@ label scene6:
     "..."
     "..."
     "..."
-    scene bar with dissolve
-    player "I’ve had a few drinks while talking with Lola. Getting woozy."
-    player "…Perfect."
+    scene bg bar with dissolve
+    "I’ve had a few drinks while talking with Lola. Getting woozy."
+    "…Perfect."
     lola "Got something you’re trying to forget, don’t ya?"
     player "Ah? I dunno, Lola… My heads way too fuzzy to think about that stuff."
     player "Get me another, pleaseee…"
@@ -417,33 +409,35 @@ label scene6:
     return
 
 label scene7:
-    scene starsOne with dissolve
+    scene bg starryOne with dissolve
+    play music "audio/maintheme.mp3"
+
     "It's been a few weeks. Me and Lilli have been keeping up with each other over calls and texts."
     "We’ve been getting a little serious, so I’m anxious to make this second date go good."
     "I’m here on time, this time around. Even got a star map so we can try to find all the constellations."
     "Guess I’ll just have to wait no-!"
     "Wh-What! Everything’s dark!"
-    lilli "Guess whoooo~"
+    lillith "Guess whoooo~"
     menu:
         "Jill?":
             show lilli smile with dissolve
-            lilli "No silly, its me!"
+            lillith "No silly, its me!"
         "Mom?":
             show lilli smile with dissolve
-            lilli " Correct answer, my sweetheart~!"
+            lillith " Correct answer, my sweetheart~!"
         "Lilli?":
             show lilli smile with dissolve
-            lilli "No silly, its me!"
-    lilli "I see you’ve come prepared this time. You’re always so thoughtful!"
+            lillith "No silly, its me!"
+    lillith "I see you’ve come prepared this time. You’re always so thoughtful!"
     player "Of course. You deserve only the best."
-    lilli "Oh, you charmer~"
-    lilli "Come on, lets take in the view."
+    lillith "Oh, you charmer~"
+    lillith "Come on, lets take in the view."
     player "…Right!"
     "We went through all the usual pleasantries and looked at the stars together."
-    "I started to feel myself really enjoying this date, laying so close to Lilli."
+    "I started to feel myself really enjoying this date, laying so close to lillith."
     "I feel like I should make that known."
-    player "Hey, Lilli…"
-    lilli "Yes, my sweetheart?"
+    player "Hey, lillith…"
+    lillith "Yes, my sweetheart?"
     menu:
         "I’ve really enjoyed tonight":
             jump official
@@ -453,17 +447,17 @@ label scene7:
 
         "*Kiss her*":
             player "Lilli…"
-            Lilli "[name]..."
+            lillith "[name]..."
             "I leaned in, and so did she. My heart was racing, and I felt short of breath."
             "Then… everything vanished."
             "All I could feel… were her lips against mine."
             "An eternity passed before it was over. Our eyes were locked, and neither of us wanted to look away."
-    lilli "…[name]..."
-    lilli "What we have… is special."
-    lilli "Lets make it official."
+    lillith "…[name]..."
+    lillith "What we have… is special."
+    lillith "Lets make it official."
     "I…"
     "She put her fingers on my lips"
-    lilli "You don’t have to say anything yet. But when you’re ready… Come and tell me."
+    lillith "You don’t have to say anything yet. But when you’re ready… Come and tell me."
     "She stood and left… Leaving me with that."
     show lilli smile at right with move
 
@@ -472,6 +466,243 @@ label scene7:
     "And, its happening again… I’m getting that feeling… Like I’ve been here before."
     jump scene8
 
+    return
+
+label official:
+    lilli "So have I…"
+    lilli "I think, maybe, I wanna keep doing this. For years and years."
+    lilli "[name]. Lets make it official."
+    return
+label scene8:
+    $drink = ""
+    scene bg bar with dissolve
+    play music "audio/melancholy.mp3"
+    "I’m gonna have to make post-date bar visits a routine."
+    "It really eases my mind. Going on dates with Lilli is really fun, but something about the bar is familiar and safe."
+    "It lets me relax and unwind. And after tonight, I’ll need that time to think."
+    show lola smile with dissolve
+    lola "Hey [name]!"
+    player "Hey, Lola. How are you"
+    lola "Eh, its the same as always. You?"
+    player "Great!. Just back from a date."
+    lola "Oh right, you told me about that! So, how’d it go?"
+    player "It was amazing."
+    lola "Getting serious?"
+    menu:
+        "Yeah I think so":
+            lola "That’s cool. What did you do?"
+
+        "Not yet":
+            lola "That’s cool. What did you do?"
+        "Im open to anything":
+            lola "That’s cool. What did you do?"
+    player "We went stargazing. It was beautiful."
+    lola "Stargazing. Interesting."
+    player "Anyways, are you going to order anything?"
+    menu:
+        "Moscow Mule":
+            $drink = "Moscow Mule"
+        "Whiskey":
+            $drink = "Whiskey"
+        "Beer":
+            $drink = "Beer"
+    lola "One second…"
+    lola "Alright, player. Here’s your [drink]."
+    lola "Drink up."
+    player "Thanks."
+    player "If there’s one thing I can rely on in this world, it’s buying a [drink]. for double what it should cost."
+    lola "Boo hoo. You're the one that came here."
+    player "Fair."
+    lola "The girl you’re seeing, what’s she like?"
+    player "She’s beautiful. And she’s fun. And exciting. Basically perfect."
+    lola "Did you give her 5 stars on yelp?"
+    player "Haha. Very funny."
+    lola "Seriously though, that’s great."
+    player "Are you seeing anyone?"
+    lola "Am I seeing anyone?"
+    lola "I… I’m not sure…"
+    "What’s that supposed to mean?"
+    player "I understand."
+    hide lola with dissolve
+    scene black with fade
+    "We continued to talk into the night, and once it got late I headed back home."
+    jump scene9
+    return
+label scene9:
+    scene bg nightPark with fade
+    "A few days later."
+    "Another late night at work… I’m not tired enough to go to bed yet though."
+    "I wonder what I should do…"
+    "Maybe I should call Lilli… or maybe go to the bar?"
+    "I really like Lilli… I feel like she really understands me."
+    "But going to the bar can be so… relaxing."
+    "Maybe its the drinks, but something about the bartender feels nostalgic."
+    menu:
+        "Text Lilli":
+            jump badending
+        "Go to [barName]":
+            jump ending
+    return
+label badending:
+    "I pull out my phone and pull up Lilli’s contact. I text her asking her to meet me in the park."
+    "I guess I’ll wait for a few minutes to see if she responds…"
+    play audio "audio/poof.mp3"
+    play music "audio/eckleTheme.mp3"
+    show eckle smile with dissolve
+    eckle "Looking for your date, eh?"
+    player "Not you. I’m looking for Lilli. Hopefully she’ll respond to my text soon."
+    eckle "Ah yes. Lilli. How is she doing anyways?"
+    player "I’m not dumb. I know you had something to do with this."
+    eckle "Oh?"
+    player "What did that potion do? Did it make me super attractive? Will it wear off?"
+    eckle "Make you super attractive, sport? It didn’t do anything to you at all."
+    "What is he talking about? There’s no way I landed a girl like Lilli with dumb luck…"
+    eckle "Don’t you get it? Isn’t she perfect?"
+    player "I guess..."
+    eckle "Maybe too perfect?"
+    "What is he getting at…"
+    eckle "The only thing the potion changed about you was in your mind."
+    player "Oh my god…"
+    eckle "Do you understand now? Lilli’s not real, [name]."
+    eckle "She’s a fabrication."
+    eckle "I created her in your mind."
+    eckle "She’s your perfect partner."
+    eckle "I saw you in a miserable state and thought I’d give you a second chance."
+    eckle "I thought you would easily be able to tell it was a farce, that your true love was near this whole time."
+    eckle "Maybe you were lying to yourself about how much you loved her."
+    player "No… That isn’t true! I love Selene! I would do anything to get her back."
+    eckle "You made your choice."
+    outline "BAD ENDING"
+    jump credits
+label ending:
+    hide dayPark with fade
+    scene black with fade
+
+    "I guess it is late… I think I’ll just go to the bar. Hopefully bartender is there."
+    "A few minutes pass…"
+    scene bar with fade
+    show lola smile with dissolve
+    lola "Hey [name]! How are you?"
+    player "I’m alright, just a little tired. Long day."
+    lola "I get it. What would you like?"
+    menu:
+        "Moscow Mule":
+            $drink = "Moscow Mule"
+        "Whiskey":
+            $drink = "Whiskey"
+        "Beer":
+            $drink = "Frothy Water"
+    "ill take a [drink]"
+    lola "I'll get that ready for you."
+    "I don’t know what it is about her, but she makes me feel so safe."
+    lola "Here you are!"
+    player "Thanks."
+    lola "Any fun stories? Got anything to say or are you going to drink in silence?"
+    player "Sorry, I just have a lot on my mind."
+    "God, I must look so nervous right now."
+    "Going on dates with dream girl is so fun… and yet…"
+    "A part of me wants to be with bartender."
+    "This shouldn’t even be an issue. I know who I should choose."
+    menu:
+        "Ask out bartender":
+            jump trueending
+        "Finish your drink and leave":
+            jump alchoholic
+    return
+label trueending:
+    player "You know what, I’m just going to say it. Bartender, I think I-"
+    play audio "audio/poof.mp3"
+    show eckle smile at left with dissolve
+    show lola neutral at right with dissolve
+    play music "audio/eckleTheme.mp3"
+    eckle "Very good, [name]! Very good."
+    eckle "I’m impressed."
+    eckle"Looks like you were able to see through the facade."
+    eckle"When I saw you looking so incredibly miserable that night I decided to give you a second chance."
+    eckle"I decided to give you a second chance at what you thought was true love."
+    eckle"It looks like you were right after all."
+    lola "[name] do you know him?"
+    eckle"Lilli was perfect, wasn’t she?"
+    eckle"But there was something off."
+    eckle"I’m impressed that you picked up on that. Now for your reward."
+    play audio "audio/poof.mp3"
+    play music "audio/melancholy.mp3"
+    hide lola with dissolve
+    show selene sad at right with dissolve
+
+    eckle "I’ve turned her back."
+    eckle "You knew Lola was Selene the whole time, didn’t you?"
+    eckle "I’ve given you a gold opportunity."
+    eckle "You no longer have to be apart."
+    selene "What… happened… [name]?"
+    eckle "Selene! I’ve made my decision. I’m going to stay with you. No matter what it takes."
+    eckle "and scene."
+    hide eckle with fade
+    selene "Where are we? What happened?"
+    selene"I…"
+    selene "I missed you."
+    play music "audio/melancholy.mp3"
+    outline "GOOD ENDING"
+    jump credits
+    return
+
+
+
+label alchoholic:
+    show lola neutral with dissolve
+    player "Sorry for being so quiet."
+    "I takes a large swig of their drink."
+    player "Thanks for being a good friend, Lola."
+    show lola smile with dissolve
+    lola "Hah! I get paid to be here, you know?"
+    player "Ouch. That one hurt."
+    lola "Just kidding!"
+    lola "Would you like another drink?"
+    player "No, I should head home now."
+    lola"See you around!"
+    hide lola with dissolve
+    scene bg nightPark with fade
+    "What am I thinking? When did I get so greedy?"
+    "I can’t believe I considered throwing away what I have with dream girl."
+    play music "audio/eckleTheme.mp3" fadeout 1.0
+    play sound "audio/poof.mp3" volume 1.0
+    show eckle smile with fade
+    eckle "Another late night walk in the park, eh?"
+    player "I don’t want any of your trouble, Magician."
+    eckle "You don’t want any of my trouble, boy?"
+    eckle "Really?"
+    eckle"Because I can recall that you drank one of my potions."
+    player "Looks like I’m regretting it now."
+    eckle "How was the bar, player?"
+    player "You scare me."
+    player "It was fine. I had a drink. I left."
+    eckle "Nothing weighing on your mind?"
+    eckle "No big decisions made?"
+    player "What are you getting at? What do you know?"
+    eckle "Do you know what that potion did, player?"
+    player "Not really…"
+    player "Did it make me super attractive?"
+    eckle "Make you super attractive, sport? It didn’t do anything to you at all."
+    "What is he talking about? There’s no way I landed a girl like Lilli with dumb luck…"
+    eckle "Don’t you get it? Isn’t she perfect?"
+    player "I guess…"
+    eckle "Maybe too perfect?"
+    "What is he getting at…"
+    eckle "The only thing the potion changed about you was in your mind."
+    player "Oh my god…"
+    eckle "Do you understand now? Lilli’s not real, player."
+    eckle "She’s a fabrication."
+    eckle "I created her in your mind."
+    eckle "She’s your perfect partner."
+    eckle "I saw you in a miserable state and thought I’d give you a second chance."
+    eckle "I thought you would easily be able to tell it was a farce, that your true love was near this whole time."
+    eckle "Maybe you were lying to yourself about how much you loved her."
+    player "No… That isn’t true! I love Selene! I would do anything to get her back!"
+    eckle "You made your choice."
+    outline "You went to the bar only to get a drink. Nothing more. Lame."
+    outline "ALCOHOLIC ENDING"
+    play music "audio/melancholy.mp3" fadeout 1.0
+    jump credits
     return
 
 
@@ -491,11 +722,27 @@ label scene7:
 
 
 
-label official:
-    lilli "So have I…"
-    lilli "I think, maybe, I wanna keep doing this. For years and years."
-    lilli "[name]. Lets make it official."
-    return official
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -551,7 +798,7 @@ label lameEnding:
 
 label credits:
     #Shoutout to DaFool on lemmasoft for the template credit code
-    scene bg stars #replace this with a fancy background
+    scene bg starryOne #replace this with a fancy background
     #I have no idea how to make sure it doesnt past the letter count
     show cred at Move((0.5, 2.0), (0.5, 0.0), 25, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
     window hide

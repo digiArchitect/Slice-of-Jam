@@ -2,21 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 425: menu statement expects a non-empty block.
-    menu:
-        ^
-
-File "game/script.rpy", line 426: expected statement.
-    "Jill?":
-           ^
-
-File "game/script.rpy", line 429: expected statement.
-    "Mom?":
-          ^
-
-File "game/script.rpy", line 432: expected statement.
-    "Lilli?":
-            ^
+File "game/script.rpy", line 25: expected '=' not found.
+    image bg bar "bar.png"
+                 ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sun Mar 27 17:46:57 2022
+Sun Mar 27 18:49:40 2022

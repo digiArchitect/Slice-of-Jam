@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 153: expected 'label_name_declare' not found.
-    label
-         ^
+File "game/script.rpy", line 283: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "...Potions"
+                ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sat Mar 26 19:58:03 2022
+Sun Mar 27 15:18:48 2022

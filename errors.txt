@@ -2,8 +2,21 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 358: is not terminated with a newline. (Check strings and parenthesis.)
-        if ([quips[0] ==  "Cats got your tongue?" || [quips[0]] == "You've got nothing to say pal?"):
+File "game/script.rpy", line 425: menu statement expects a non-empty block.
+    menu:
+        ^
+
+File "game/script.rpy", line 426: expected statement.
+    "Jill?":
+           ^
+
+File "game/script.rpy", line 429: expected statement.
+    "Mom?":
+          ^
+
+File "game/script.rpy", line 432: expected statement.
+    "Lilli?":
+            ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sun Mar 27 16:53:23 2022
+Sun Mar 27 17:46:57 2022

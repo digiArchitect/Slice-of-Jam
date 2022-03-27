@@ -355,12 +355,12 @@ label scene6:
     "This seems weirdly familiar?"
     "Think I read online getting that feeling has to do with memory encoding failure."
     "Bartender" "[quips[0]]"
-    if ([quips[0] ==  "Cats got your tongue?" || [quips[0]] == "You've got nothing to say pal?"):
+    if ([quips[0]] ==  "Cats got your tongue?" || [quips[0]] == "You've got nothing to say pal?"):
         player "Oh, ah, no- Its nothing."
         player "Just trying to keep my memories straight."
         bartend "At a bar? Haha, might be a little hard."
     else:
-        player "Huh? Oh, y-yeah, it is.""
+        player "Huh? Oh, y-yeah, it is."
         player "I was actually out enjoying it for a bit today."
         "Bartender" "Now you’re here to forget it all? I must be missing something here!"
     lola "By the way, name’s Lola. Like the bunny."
@@ -415,12 +415,91 @@ label scene6:
     "…My life is kind of a movie right now."
     jump scene7
     return
-label scene7
+
+label scene7:
+    scene starsOne with dissolve
     "It's been a few weeks. Me and Lilli have been keeping up with each other over calls and texts."
     "We’ve been getting a little serious, so I’m anxious to make this second date go good."
     "I’m here on time, this time around. Even got a star map so we can try to find all the constellations."
     "Guess I’ll just have to wait no-!"
     "Wh-What! Everything’s dark!"
+    lilli "Guess whoooo~"
+    menu:
+        "Jill?":
+            show lilli smile with dissolve
+            lilli "No silly, its me!"
+        "Mom?":
+            show lilli smile with dissolve
+            lilli " Correct answer, my sweetheart~!"
+        "Lilli?":
+            show lilli smile with dissolve
+            lilli "No silly, its me!"
+    lilli "I see you’ve come prepared this time. You’re always so thoughtful!"
+    player "Of course. You deserve only the best."
+    lilli "Oh, you charmer~"
+    lilli "Come on, lets take in the view."
+    player "…Right!"
+    "We went through all the usual pleasantries and looked at the stars together."
+    "I started to feel myself really enjoying this date, laying so close to Lilli."
+    "I feel like I should make that known."
+    player "Hey, Lilli…"
+    lilli "Yes, my sweetheart?"
+    menu:
+        "I’ve really enjoyed tonight":
+            jump official
+
+        "I think I’ve fallen in love.":
+            jump official
+
+        "*Kiss her*":
+            player "Lilli…"
+            Lilli "[name]..."
+            "I leaned in, and so did she. My heart was racing, and I felt short of breath."
+            "Then… everything vanished."
+            "All I could feel… were her lips against mine."
+            "An eternity passed before it was over. Our eyes were locked, and neither of us wanted to look away."
+    lilli "…[name]..."
+    lilli "What we have… is special."
+    lilli "Lets make it official."
+    "I…"
+    "She put her fingers on my lips"
+    lilli "You don’t have to say anything yet. But when you’re ready… Come and tell me."
+    "She stood and left… Leaving me with that."
+    show lilli smile at right with move
+
+    "…Holy fuck…"
+    "There’s just no way this girl is real."
+    "And, its happening again… I’m getting that feeling… Like I’ve been here before."
+    jump scene8
+
+    return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+label official:
+    lilli "So have I…"
+    lilli "I think, maybe, I wanna keep doing this. For years and years."
+    lilli "[name]. Lets make it official."
+    return official
+
+
+
+
 
 
 

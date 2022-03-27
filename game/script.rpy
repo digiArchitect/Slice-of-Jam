@@ -7,6 +7,7 @@ define lillith = Character("Lilli", image = "Lilli")
 define eckle = Character("Eckle",image="eckle")
 define selene = Character("Selene", image="Selene")
 define player = Character('[name]')
+define lola = Character('Lola', image="Lola")
 define outline = Character(None,
                             what_size=40,
                             what_outlines=[(3, "#FF00FF")],
@@ -40,7 +41,7 @@ label start:
     scene black
     play music "audio/melancholy.mp3"
     $ name = renpy.input("What is your name?", default="Astra").strip()
-    $ barName = "barName"
+    $ barName = "TJ's"
 
 
     # Show a background. This uses a placeholder by default, but you can
@@ -63,11 +64,11 @@ label start:
         "What is there to say?":
             selene "Give me an answer, I’m begging you."
             python:
-                quips.append("I've got nothing to say")
+                quips.append("You've got nothing to say pal?")
         "The stars are pretty tonight.":
             selene "The stars are prettier over there [name] come with me."
             python:
-                quips.append("haha you're brighter than the sun")
+                quips.append("Its nice out tonight, eh?")
         "Cats got my tongue":
             show selene sad-smile with dissolve
             selene "You always know how to lighten the mood…"
@@ -314,15 +315,8 @@ label scene5:
     player "W-wait!"
     player "…She’s gone."
     player "Ahh, this is fucking insane!"
-
-
-
-
-
-
-
-
-
+    jump scene6
+    return
 
 label flirt:
     lillith "Oh? Are you trying to tell me something, [name]~?"
@@ -335,6 +329,117 @@ label flirt:
     lillith "Can't rush into a relationship, can we?"
     player "Well, yeah. You’re totally right."
     return
+
+
+label scene6:
+    "I can’t believe magician’s potion worked so well. That has to be it right? There’s no way someone so cute and cool would be into me."
+    "Almost makes me forget about Selene."
+    "I don’t want to think about her right now. I should go somewhere to get it off my mind…"
+    "I should go to [barName]. If its good enough for Lilli its good enough for me!"
+    scene bar with dissolve
+    player "Wow… Place looks nice. Lilli has great taste!"
+    player "Right, I’m here to numb my head. Time to get to it, then."
+    "As I sat down, the bartender approached."
+    show lola smile with dissolve
+    "Bartend" "What can I get you?"
+    "Wow, she’s got great style. Suits this place well, I guess…"
+    "Heheh. ‘Suits’."
+    menu:
+        "Something Strong":
+            "Bartender" "I hear you. Martini coming up."
+        "Something Light.":
+            "Bartender" "Lets get you a Bloody Mary."
+        "Suprise me":
+            "Bartender" "Seems like you'd been in the mood for a Piano Man."
+    "..."
+    "This seems weirdly familiar?"
+    "Think I read online getting that feeling has to do with memory encoding failure."
+    "Bartender" "[quips[0]]"
+    if ([quips[0] ==  "Cats got your tongue?" || [quips[0]] == "You've got nothing to say pal?"):
+        player "Oh, ah, no- Its nothing."
+        player "Just trying to keep my memories straight."
+        bartend "At a bar? Haha, might be a little hard."
+    else:
+        player "Huh? Oh, y-yeah, it is.""
+        player "I was actually out enjoying it for a bit today."
+        "Bartender" "Now you’re here to forget it all? I must be missing something here!"
+    lola "By the way, name’s Lola. Like the bunny."
+    lola "You?"
+    player "Ah, right. I’m [name]. Nice to meet you."
+    lola "Same here!"
+    lola "Here’s your drink."
+    player "Thank you."
+    "Well, this’ll do it. Bottoms up."
+    scene black with fade
+    "..."
+    "..."
+    "..."
+    scene bar with dissolve
+    player "I’ve had a few drinks while talking with Lola. Getting woozy."
+    player "…Perfect."
+    lola "Got something you’re trying to forget, don’t ya?"
+    player "Ah? I dunno, Lola… My heads way too fuzzy to think about that stuff."
+    player "Get me another, pleaseee…"
+    lola "So you were just a lightweight after all!"
+    lola "You know, maybe there’s some things you shouldn’t forget."
+    lola "Don’t wanna throw away what you had, no?"
+    player "..."
+    player "I mean, I guess so."
+    player "But sometimes I feel the other way."
+    player "Mayb-"
+    player "!!!!"
+    "She’s leaning over the counter now, looking me right in the eye."
+    "Its not intense, though. Its soft. Lola’s gaze… feels like safety. Home."
+    lola "Whatever you choose, just know you can always come back here."
+    lola "Talking with you has been… enlightening."
+    lola "I’d like to hear more."
+    player "U-Um, sure thing!"
+    player "Actually, I’ll probably be back here soon."
+    player "Got a date coming up, definitely have to decompress after."
+    lola "So you’re a playboy, are ya?"
+    lola "In that case, good luck. looking forward to hearing more!"
+    "…"
+    "I’ll definitely come back."
+    "But, time to finish up here. Lets see about the price tag…"
+    "…Shit. I’m definitely gonna starve now."
+    lola "…"
+    lola "So, that’s it, then?"
+    lola "See you again!"
+    player "Yeah!"
+    hide lola with dissolve
+    scene black with fade
+    "..."
+    "..."
+    "After leaving, I reflected a bit. Today was insane. Went on a date with a cute girl, and I met a super cool bartender."
+    "I definitely have to see both of them again."
+    "…My life is kind of a movie right now."
+    jump scene7
+    return
+label scene7
+    "It's been a few weeks. Me and Lilli have been keeping up with each other over calls and texts."
+    "We’ve been getting a little serious, so I’m anxious to make this second date go good."
+    "I’m here on time, this time around. Even got a star map so we can try to find all the constellations."
+    "Guess I’ll just have to wait no-!"
+    "Wh-What! Everything’s dark!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

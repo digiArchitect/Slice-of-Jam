@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 283: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "...Potions"
-                ^
+File "game/script.rpy", line 358: is not terminated with a newline. (Check strings and parenthesis.)
+        if ([quips[0] ==  "Cats got your tongue?" || [quips[0]] == "You've got nothing to say pal?"):
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sun Mar 27 15:18:48 2022
+Sun Mar 27 16:53:23 2022

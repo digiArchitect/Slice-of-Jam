@@ -69,7 +69,7 @@ label start:
             selene "The stars are prettier over there [name] come with me."
             python:
                 quips.append("Its nice out tonight, eh?")
-        "Cats got my tongue":
+        "Cats got my tongue...":
             show selene sad-smile with dissolve
             selene "You always know how to lighten the mood…"
             selene "I don’t want to lose that."
@@ -82,7 +82,7 @@ label start:
     player "..."
     player "You know I can't go with you selene."
     selene "Are we really going to throw what we have away?"
-    selene "Is this the way that you want this to end."
+    selene "Is this the way that you want this to end?"
     player "My answer won’t change. I can't put my life on hold for you."
     player "Besides, do we even have anything to throw away?"
     show selene sad-smile with dissolve
@@ -164,7 +164,7 @@ label evilwizardman:
     "You drink the potion."
     eckle "Good luck!"
     hide eckle with fade
-    eckle "AHAHAHAHAHAHA"
+    eckle "AHAHAHAHAHAHA!!!"
     scene black with fade
     player "What a sketchy guy… I guess I’ll go home then…"
     jump scene4
@@ -196,8 +196,8 @@ label scene4:
     lillith "You still haven’t answered my original question. What are you doing out at such an ungodly hour?"
     player "I had a project I was working on that ran late. What about you?"
     lillith "Not much of a talker, huh?"
-    lillith "Anyways, I was at [barName]."
-    player "[barName], huh? I haven't been."
+    lillith "Anyways, I was at TJ's Bar."
+    player "TJ's, huh? I haven't been."
     lillith "We should go sometime!"
     "We?"
     "Who does she think “We” is anyway? I just met her!"
@@ -288,7 +288,7 @@ label scene5:
             jump flirt
         "The best way to end the night.":
             jump flirt
-        "...Potions":
+        "...Potions.":
             lillith "Hm?"
             lillith "What are you even talking about!?"
             player "Oh- I was just- Uh-"
@@ -322,7 +322,7 @@ label flirt:
     lillith "Oh? Are you trying to tell me something, [name]~?"
     show lilli smile with dissolve
     lillith "You’ll have to be more direct than that."
-    "Should I just start to learn in? Or should I ask first? Shit, shit…!"
+    "Should I just start to lean in? Or should I ask first? Shit, shit…!"
     "W-What?! Why is she holding my chin?!"
     lillith "Well… I can’t say I don’t feel the same."
     lillith "But I think we should learn more about each other first."
@@ -335,7 +335,7 @@ label scene6:
     "I can’t believe magician’s potion worked so well. That has to be it right? There’s no way someone so cute and cool would be into me."
     "Almost makes me forget about Selene."
     "I don’t want to think about her right now. I should go somewhere to get it off my mind…"
-    "I should go to [barName]. If its good enough for Lilli its good enough for me!"
+    "I should go to TJ's. If its good enough for Lilli its good enough for me!"
     scene bar with dissolve
     player "Wow… Place looks nice. Lilli has great taste!"
     player "Right, I’m here to numb my head. Time to get to it, then."
